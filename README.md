@@ -111,6 +111,24 @@ Import: Node-RED → ☰ Menü → Import → Datei auswählen → Deploy
 
 ---
 
+## Node-RED Projekt ohne IO Broker Adapter
+
+Ein fertiger Node-RED Flow ist im Repository unter [`main/nodered.json`](main/nodered.json) verfügbar.
+Was der Flow macht.....Der Flow ist komplett eigenständig – kein ioBroker-Adapter nötig:
+
+Beim Start / täglich 06:00 / manuell → holt die HTML-Seite von awb-es.de
+Extrahiert die ICS-URL aus dem HTML
+Lädt die ICS-Datei direkt von AWB Esslingen
+Parst alle Termine mit dem Zeitzonen-Fix (UTC vs. MESZ)
+Baut das Dashboard mit farbigen Karten auf
+Schreibt optional die Werte auch in ioBroker-Datenpunkte unter 0_userdata.0.Muell.*
+
+
+Konfiguration
+Nur einen einzigen Node anpassen – den Node ⚙️ KONFIGURATION:
+javascriptmsg.awb_city   = 'Dettingen unter Teck';  // ← dein Ort
+msg.awb_street = 'Am Kelterplatz';         // ← deine Straße
+
 ## Verwendung in Blockly / JavaScript
 
 ```javascript
