@@ -105,7 +105,7 @@ iobroker restart awb-esslingen.0
 
 ## Verwendung in Node-RED
 
-Ein fertiger Node-RED Dashboard-Flow ist im Repository unter [`nodered/muellkalender_nodered.json`](nodered/muellkalender_nodered.json) verfügbar.
+Ein fertiger Node-RED Dashboard-Flow ist im Repository unter [`admin/nodered.json`](admin/nodered.json) verfügbar.
 
 Import: Node-RED → ☰ Menü → Import → Datei auswählen → Deploy
 
