@@ -1,8 +1,12 @@
 {
   "common": {
     "name": "awb-esslingen",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "news": {
+      "0.1.1": {
+        "en": "Fixed waste type keywords to match AWB Esslingen ICS format",
+        "de": "Schlüsselwörter an AWB Esslingen ICS-Format angepasst"
+      },
       "0.1.0": {
         "en": "Initial release",
         "de": "Erstveröffentlichung"
@@ -30,9 +34,9 @@
     "platform": "Javascript/Node.js",
     "main": "main.js",
     "icon": "admin/awb-es.png",
-    "extIcon": "https://raw.githubusercontent.com/timothefimo/AWB_Esslingen_Gebiet_DettingenTeck/main/admin/awb-es.png",
+    "extIcon": "https://raw.githubusercontent.com/timothefimo/ioBroker.awb-esslingen/main/admin/awb-es.png",
     "enabled": true,
-    "readme": "https://github.com/timothefimo/AWB_Esslingen_Gebiet_DettingenTeck/blob/main/README.md",
+    "readme": "https://github.com/timothefimo/ioBroker.awb-esslingen/blob/main/README.md",
     "loglevel": "info",
     "mode": "daemon",
     "type": "general",
@@ -61,25 +65,25 @@
       {
         "name": "Restmüll",
         "id": "restmuell",
-        "keywords": "Restmüll,Restabfall,Graue Tonne",
+        "keywords": "Restmüll,Restabfall",
         "color": "#808080"
       },
       {
         "name": "Biomüll",
         "id": "biomuell",
-        "keywords": "Biomüll,Biotonne,Braune Tonne,Bio",
+        "keywords": "Biotonne,Biomüll",
         "color": "#8B4513"
       },
       {
         "name": "Papier",
         "id": "papier",
-        "keywords": "Papier,Papiertonne,Blaue Tonne",
+        "keywords": "Papiertonne,Papier",
         "color": "#0000FF"
       },
       {
         "name": "Gelber Sack",
         "id": "gelberSack",
-        "keywords": "Gelber Sack,Gelbe Tonne,Leichtverpackung,LVP",
+        "keywords": "Gelbe/r Sack/Tonne,Gelber Sack,Gelbe Tonne",
         "color": "#FFD700"
       }
     ]
