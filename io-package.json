@@ -1,6 +1,6 @@
 {
   "common": {
-    "name": "awb-es",
+    "name": "awb-esslingen",
     "version": "0.1.0",
     "news": {
       "0.1.0": {
@@ -14,20 +14,17 @@
       "de": "AWB Esslingen Müllkalender"
     },
     "desc": {
-      "en": "Fetches waste collection dates from the Abfallwirtschaftsbetrieb des Landkreises Esslingen (AWB-ES)",
-      "de": "Ruft die Abfuhrtermine vom Abfallwirtschaftsbetrieb des Landkreises Esslingen (AWB-ES) ab"
+      "en": "Fetches waste collection dates from AWB Esslingen",
+      "de": "Ruft die Abfuhrtermine vom AWB Esslingen ab"
     },
     "authors": [
-      "Dein Name <deine@email.de>"
+      "timothefimo"
     ],
     "keywords": [
       "ioBroker",
       "Müll",
-      "Müllabfuhr",
       "AWB",
-      "Esslingen",
-      "Abfall",
-      "Abfallkalender"
+      "Esslingen"
     ],
     "license": "MIT",
     "platform": "Javascript/Node.js",
@@ -38,7 +35,6 @@
     "readme": "https://github.com/timothefimo/AWB_Esslingen_Gebiet_DettingenTeck/blob/main/README.md",
     "loglevel": "info",
     "mode": "daemon",
-    "schedule": "0 6 * * *",
     "type": "general",
     "connectionType": "cloud",
     "dataSource": "poll",
